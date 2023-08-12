@@ -6,3 +6,6 @@ https://github.com/Sorangez/Tabola_Librorum.git
 
 Website link:
 https://sorangez.github.io/Tabola_Librorum/
+
+Demo YT link:
+https://youtu.be/f7Mx2Mg_bfc
