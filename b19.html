@@ -1,0 +1,110 @@
+<!--   
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Thanh Tung
+  ID: s3979425
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Win Friends and Influence People</title>
+    <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="book.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="Logo"><img src="Images/Logo.png" alt="Logo"></a>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu"></i>
+            <i class='bx bx-x' id="close"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:0">Home</a>
+            <a href="fiction.html" style="--i:1">Fiction</a>
+            <a href="non-fiction.html" style="--i:2">Nonfiction</a>
+            <a href="self-help.html" style="--i:3">Self-Help</a>
+            <a href="contact.html" style="--i:4">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <content>
+            <div class="body">
+                    <div class="name">
+                        <a href="b19.html">How to Win Friends and Influence People</a>
+                    </div>
+                    
+                <div class="breadcrumb">
+                    <p><a href="index.html">Home</a> > <a href="self-help.html">Self-Help</a> > <a href="b19.html">How to Win Friends and Influence People</a></p>
+                </div>
+            
+                <section class="book-container">
+                    <div class="img-container">
+                       <div class="img-grid">
+                                <img class="big-img" src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780671027032_p0_v7_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B300x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                                <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780671027032_p0_v7_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B300x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                                <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780671027032_p0_v7_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B300x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                                <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780671027032_p0_v7_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B300x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                        </div> 
+                    </div>
+                    <div class="book-info">   
+                        <fieldset>
+                            <legend class="title">Book Details</legend> 
+                            <div class="details">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <a class="author">Dale Carnegie</a>
+                                        <a class="price">Price: <span class="price">$29.99</span></a>
+                                    </div> 
+                                    <div class="button-container">
+                                        <button class="buy">
+                                        <a href="contact.html"><i class="gg-shopping-cart" id="cart"></i></a>
+                                        <div class="text">Add <span>To Cart</span>
+                                        </button>
+                                    </div>
+                                </div>             
+                                <div class="summary">
+                                    <p> 
+                                        <li>You can go after the job you want and get it!</li>
+                                        <li>You can take the job you have and improve it!</li>
+                                        <li>You can take any situation and make it work for you!</li>
+                                        
+                                        Dale Carnegie's rock-solid, time-tested advice has carried countless people up the ladder of success in their business and personal lives. One of the most groundbreaking and timeless bestsellers of all time, How to Win Friends & Influence People will teach you:
+                                        
+                                        <li>Six ways to make people like you</li>
+                                        <li>Twelve ways to win people to your way of thinking</li>
+                                        <li>Nine ways to change people without arousing resentment</li>
+                                    </p> 
+                                </div>
+                        </fieldset>
+                    </div>
+                </section>
+            
+                <br>
+            
+                
+            </div>
+
+        </content> 
+            
+    </main>
+    <footer>
+        <nav class="fnavbar">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Copyright</a>
+            <a href="contact.html">Contact us</a>
+            <a href="#">About us</a>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!--   
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Thanh Tung
+  ID: s3979425
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity</title>
+    <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="book.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="Logo"><img src="Images/Logo.png" alt="Logo"></a>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu"></i>
+            <i class='bx bx-x' id="close"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:0">Home</a>
+            <a href="fiction.html" style="--i:1">Fiction</a>
+            <a href="non-fiction.html" style="--i:2">Nonfiction</a>
+            <a href="self-help.html" style="--i:3">Self-Help</a>
+            <a href="contact.html" style="--i:4">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <content>
+            <div class="body">
+                    <div class="name">
+                        <a href="b12.html">Identity</a>
+                    </div>
+                    
+                <div class="breadcrumb">
+                    <p><a href="index.html">Home</a> > <a href="fiction.html">Fiction</a> > <a href="b12.html">Identity</a></p>
+                </div>
+            
+                <section class="book-container">
+                    <div class="img-container">
+                       <div class="img-grid">
+                                <img class="big-img" src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9781250284327_p0_v3_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                                <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9781250284327_p0_v3_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                                <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9781250284327_p0_v3_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                                <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9781250284327_p0_v3_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                        </div> 
+                    </div>
+                    <div class="book-info">   
+                        <fieldset>
+                            <legend class="title">Book Details</legend> 
+                            <div class="details">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <a class="author">Robert T. Kiyosaki</a>
+                                        <a class="price">Price: <span class="price">$21.00</span></a>
+                                    </div> 
+                                    <div class="button-container">
+                                        <button class="buy">
+                                        <a href="contact.html"><i class="gg-shopping-cart" id="cart"></i></a>
+                                        <div class="text">Add <span>To Cart</span>
+                                        </button>
+                                    </div>
+                                </div>             
+                                <div class="summary">
+                                    <p>Former Army brat Morgan Albright has finally planted roots in a friendly neighborhood near Baltimore. Her friend and roommate Nina helps her make the mortgage payments, as does Morgan's job as a bartender. But after she and Nina host their first dinner party attended by Luke, the flirtatious IT guy who'd been chatting her up at the bar her carefully built world is shattered. The back door glass is broken, cash and jewelry are missing, her car is gone, and Nina lies dead on the floor. Soon, a horrific truth emerges: It was Morgan who let the monster in. "Luke" is actually a cold-hearted con artist named Gavin who targets a particular type of woman, steals her assets and identity, and then commits his ultimate goal: murder. What the FBI tells Morgan is beyond chilling. Nina wasn't his type. Morgan is. Nina was simply in the wrong place at the wrong time. And Morgan's nightmare is just beginning. Soon she has no choice but to flee to her mother's home in Vermont. While she struggles to build something new, she meets another man, Miles Jameson. He isn't flashy or flirtatious, and his family business has deep roots in town. But Gavin is still out there hunting new victims, and he hasn't forgotten the one who got away.
+                                    </p> 
+                                </div>
+                        </fieldset>
+                    </div>
+                </section>
+            
+                <br>
+            
+                
+            </div>
+
+        </content> 
+            
+    </main>
+    <footer>
+        <nav class="fnavbar">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Copyright</a>
+            <a href="contact.html">Contact us</a>
+            <a href="#">About us</a>
+        </nav>
+    </footer>
+</body>
+</html>

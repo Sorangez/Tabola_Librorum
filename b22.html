@@ -1,0 +1,111 @@
+<!--   
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Thanh Tung
+  ID: s3979425
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Bad Parts</title>
+    <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="book.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="Logo"><img src="Images/Logo.png" alt="Logo"></a>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu"></i>
+            <i class='bx bx-x' id="close"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:0">Home</a>
+            <a href="fiction.html" style="--i:1">Fiction</a>
+            <a href="non-fiction.html" style="--i:2">Nonfiction</a>
+            <a href="self-help.html" style="--i:3">Self-Help</a>
+            <a href="contact.html" style="--i:4">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <content>
+            <div class="body">
+                    <div class="name">
+                        <a href="b22.html">No Bad Parts</a>
+                    </div>
+                    
+                <div class="breadcrumb">
+                    <p><a href="index.html">Home</a> > <a href="self-help.html">Self-Help</a> > <a href="b22.html">No Bad Parts</a></p>
+                </div>
+            
+                <section class="book-container">
+                    <div class="img-container">
+                       <div class="img-grid">
+                                <img class="big-img" src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9781683646686_p0_v3_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                                <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9781683646686_p0_v3_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                                <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9781683646686_p0_v3_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                                <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9781683646686_p0_v3_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                        </div> 
+                    </div>
+                    <div class="book-info">   
+                        <fieldset>
+                            <legend class="title">Book Details</legend> 
+                            <div class="details">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <a class="author">Richard Schwartz Ph.D.</a>
+                                        <a class="price">Price: <span class="price">$16.99</span></a>
+                                    </div> 
+                                    <div class="button-container">
+                                        <button class="buy">
+                                        <a href="contact.html"><i class="gg-shopping-cart" id="cart"></i></a>
+                                        <div class="text">Add <span>To Cart</span>
+                                        </button>
+                                    </div>
+                                </div>             
+                                <div class="summary">
+                                    <p>Is there just one “you”? We've been taught to believe we have a single identity, and to feel fear or shame when we can't control the inner voices that don't match the ideal of who we think we should be. Yet Dr. Richard Schwartz's research now challenges this “mono-mind” theory. “All of us are born with many sub-minds or parts,” says Dr. Schwartz. “These parts are not imaginary or symbolic. They are individuals who exist as an internal family within us and the key to health and happiness is to honor, understand, and love every part.” Dr. Schwartz’s Internal Family Systems (IFS) model has been transforming psychology for decades. With No Bad Parts, you'll learn why IFS has been so effective in areas such as trauma recovery, addiction therapy, and depression treatment and how this new understanding of consciousness has the potential to radically change our lives. Here you'll explore:
+                                        
+                                        <li>The IFS revolution how honoring and communicating with our parts changes our approach to mental wellness</li>
+                                        <li>Overturning the cultural, scientific, and spiritual assumptions that reinforce an outdated mono-mind model</li>
+                                        <li>The ego, the inner critic, the saboteur making these often-maligned parts into powerful allies</li> 
+                                        <li>Burdens why our parts become distorted and stuck in childhood traumas and cultural beliefs</li>
+                                        <li>How IFS demonstrates human goodness by revealing that there are no bad parts</li>
+                                        <li>The Self discover your wise, compassionate essence of goodness that is the source of healing and harmony</li>
+                                        <li>Exercises for mapping your parts, accessing the Self, working with a challenging protector, identifying each part's triggers, and more</li>
+                                        
+                                        IFS is a paradigm-changing model because it gives us a powerful approach for healing ourselves, our culture, and our planet. As Dr. Schwartz teaches, “Our parts can sometimes be disruptive or harmful, but once they're unburdened, they return to their essential goodness. When we learn to love all our parts, we can learn to love all people and that will contribute to healing the world.”
+                                    </p> 
+                                </div>
+                        </fieldset>
+                    </div>
+                </section>
+            
+                <br>
+            
+                
+            </div>
+
+        </content> 
+            
+    </main>
+    <footer>
+        <nav class="fnavbar">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Copyright</a>
+            <a href="contact.html">Contact us</a>
+            <a href="#">About us</a>
+        </nav>
+    </footer>
+</body>
+</html>

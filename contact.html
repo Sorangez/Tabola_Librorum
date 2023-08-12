@@ -1,0 +1,120 @@
+<!--   
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Thanh Tung
+  ID: s3979425
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="Logo"><img src="Images/Logo.png" alt="Logo"></a>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu"></i>
+            <i class='bx bx-x' id="close"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:0">Home</a>
+            <a href="fiction.html" style="--i:1">Fiction</a>
+            <a href="non-fiction.html" style="--i:2">Nonfiction</a>
+            <a href="self-help.html" style="--i:3">Self-Help</a>
+            <a href="contact.html" style="--i:4">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="body">
+            <div class="title">Contact Form</div>
+            <form action="#">
+                <div class="form">
+                    <label for="contact-purpose">Contact Purpose:</label>
+                    <div class="input">
+                        <select name="contact-purpose" id="contact-purpose">
+                            <option value="sell">I want to sell books</option>
+                            <option value="buy">I want to buy books</option>
+                        </select> 
+                    </div>
+                </div>
+                <div class="form">
+                    <label for="name">Full name: </label>
+                    <div class="input">
+                        <input type="text" id="name" required placeholder="Enter your name here">   
+                    </div>
+                </div>
+                <div class="form">
+                    <label for="email">Email address: </label>
+                    <div class="input">
+                        <input type="text" id="email" required placeholder="Enter your email here">   
+                    </div>
+                </div>
+                <div class="form">
+                    <label for="phone">Phone number: </label>
+                    <div class="input">
+                        <input type="text" id="phone" required placeholder="Enter your phone number here">   
+                    </div>
+                </div>
+                <div class="form">
+                    <label for="contact-preference-container">Contact preference: </label>
+                    <div class="input checkbox-container">
+                        <div class="check">
+                            <input type="checkbox" id="contact-preference" value="email" name="contact">
+                            <label for="contact-preference">By email</label>
+                        </div>
+                        <br>
+                        <div class="check">
+                            <input type="checkbox" id="contact-preference" value="phone" name="contact">
+                            <label for="contact-preference">By phone</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form ">
+                    <label for="news-container">Receive news from us?</label>
+                    <div class="input checkbox-container">
+                        <div class="check">
+                            <input type="radio" id="news" value="yes" name="news" checked>
+                            <label for="news">Yes</label>
+                        </div>
+                        <br>
+                        <div class="check">
+                            <input type="radio" id="news" value="no" name="news">
+                            <label for="news">No</label>
+                        </div>
+                    </div> 
+                </div>
+                <div class="form">
+                    <label for="notes">Extra notes:</label>
+                    <div class="input">
+                        <textarea name="notes" id="notes" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="bottom-button">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </form>
+        </div>
+    </main>
+
+<footer>
+    <nav class="fnavbar">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Copyright</a>
+        <a href="contact.html">Contact us</a>
+        <a href="#">About us</a>
+    </nav>
+</footer>
+</body>
+</html>

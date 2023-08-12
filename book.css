@@ -1,0 +1,310 @@
+/*  
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Thanh Tung
+  ID: s3979425
+*/
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&family=Oswald:wght@600&family=Poppins:wght@500&display=swap');
+
+content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+
+.body {
+    background: rgba(184, 157, 128, 0.8);
+    margin: 8rem 0 5% 0;
+    width: 80%;
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.7);
+    padding-bottom: 3rem;
+}
+
+.name {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.name a {
+    font-size: 5vw;
+    text-decoration: none;
+    color: black;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    transition: 0.4s ease;
+}
+
+.name a:hover {
+    text-shadow: 0px 1px 1px #4d4d4d;
+}
+
+.breadcrumb {
+    text-align: center;
+    
+}
+
+.breadcrumb a {
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+}
+
+.book-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 5%;
+}
+
+.img-container{
+    display: flex;
+    width: 40%;
+
+}
+
+.img-grid {
+    --gap: 2rem;
+    --num-cols: 4;
+    --row-height: 9.6vw;
+
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    
+}
+
+.img-grid >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid black;
+    box-shadow: 0px 0.5px 0.5px rgba(100, 100, 100, 0.5),
+    0px 1px 1px rgba(100, 100, 100, 0.5),
+    0px 1.5px 1.5px rgba(100, 100, 100, 0.5),
+    0px 2px 2px rgba(100, 100, 100, 0.5),
+    0px 2.5px 2.5px rgba(100, 100, 100, 0.5),
+    0px 3px 3px rgba(100, 100, 100, 0.5),
+    0px 3.5px 3.5px rgba(100, 100, 100, 0.5),
+    0px 4px 4px rgba(100, 100, 100, 0.5);
+    transition: 0.3s ease;
+    
+}
+
+.img-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.7);
+}
+
+.big-img {
+    grid-column: span 3;
+    grid-row: span 3;
+}
+
+.book-info {
+    width: 60%;
+    height: auto;
+}
+
+.details {
+    padding: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author {
+    font-size: 3rem;
+}
+
+.price {
+    font-size: 2rem;
+    color: rgb(20, 175, 20);
+    text-shadow: 0 0 3px black;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+}
+
+.buy {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid rgba(0, 0, 0,0.8);
+    box-shadow: 0 1px 0 #ccc, 
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+    color: rgb(255, 255, 255);
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background: rgba(173, 98, 98, 0.3);
+    box-shadow: 0 0 1px black;
+}
+
+#cart {
+    color: rgba(255, 255, 255,0.8);
+    margin-right: 10px;
+}
+
+fieldset {
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+
+.title {
+    font-size: 2rem;
+}
+
+
+.summary {
+    padding-top: 2rem;
+    font-size: 1.1rem;
+}
+
+
+@media (max-width:1500px) {
+    
+    .book-container {
+        flex-direction: column;
+    }
+
+    .img-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .img-grid {
+        --row-height: 12vw;
+    }
+
+    .book-info {
+        width: 100%;
+    }
+
+    .info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .buy {
+        margin: 0;
+    }
+
+}
+
+@media (max-width:992px) {
+
+    .breadcrumb a {
+        font-size: 0.95rem;
+    }
+
+
+    .img-grid {
+        --gap: 1.5rem;
+        --num-cols: 3;
+        --row-height: 13.5vw;
+    }
+
+    .book-info {
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+
+    .author {
+        font-size: 2.1rem;
+    }
+    
+    .price {
+        font-size: 1.3rem;
+    }
+
+    .summary {
+        padding-top: 1rem;
+        font-size: 1rem;
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    
+    .breadcrumb a {
+        font-size: 0.8rem;
+    }
+
+    .book-container {
+        max-width: 80%;
+        margin: 50px auto;
+        margin-bottom: 20px;
+    }
+
+    .author {
+        font-size: 1.9rem;
+    }
+    
+    .price {
+        font-size: 1.1rem;
+    }
+
+    .text {
+        display: none;
+    }
+
+    #cart {
+        transform: scale(1.5);
+        margin-left: 0.9rem;
+    }
+
+    .summary {
+        font-size: 0.9rem;
+    }
+}
+
+

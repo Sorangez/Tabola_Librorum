@@ -1,0 +1,101 @@
+<!--   
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Thanh Tung
+  ID: s3979425
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Me at the Lake</title>
+    <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="book.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="Logo"><img src="Images/Logo.png" alt="Logo"></a>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu"></i>
+            <i class='bx bx-x' id="close"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:0">Home</a>
+            <a href="fiction.html" style="--i:1">Fiction</a>
+            <a href="non-fiction.html" style="--i:2">Nonfiction</a>
+            <a href="self-help.html" style="--i:3">Self-Help</a>
+            <a href="contact.html" style="--i:4">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <content>
+            <div class="body">
+                    <div class="name">
+                        <a href="b16.html">Meet Me at the Lake</a>
+                    </div>
+                    
+                <div class="breadcrumb">
+                    <p><a href="index.html">Home</a> > <a href="fiction.html">Fiction</a> > <a href="b16.html">Meet Me at the Lake</a></p>
+                </div>
+            
+                <section class="book-container">
+                    <div class="img-container">
+                       <div class="img-grid">
+                                <img class="big-img" src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780593438565_p0_v3_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                                <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780593438565_p0_v3_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                                <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780593438565_p0_v3_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                                <img src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://prodimage.images-bn.com/pimages/9780593438565_p0_v3_s600x595.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="book image">
+                        </div> 
+                    </div>
+                    <div class="book-info">   
+                        <fieldset>
+                            <legend class="title">Book Details</legend> 
+                            <div class="details">
+                                <div class="info">
+                                    <div class="top-info">
+                                        <a class="author">Carley Fortune</a>
+                                        <a class="price">Price: <span class="price">$10.99</span></a>
+                                    </div> 
+                                    <div class="button-container">
+                                        <button class="buy">
+                                        <a href="contact.html"><i class="gg-shopping-cart" id="cart"></i></a>
+                                        <div class="text">Add <span>To Cart</span>
+                                        </button>
+                                    </div>
+                                </div>             
+                                <div class="summary">
+                                    <p>Fern Brookbanks has wasted far too much of her adult life thinking about Will Baxter. She spent just twenty-four hours in her early twenties with the aggravatingly attractive, idealistic artist, a chance encounter that spiraled into a daylong adventure in the city. The timing was wrong, but their connection was undeniable: they shared every secret, every dream, and made a pact to meet one year later. Fern showed up. Will didn't. At thirty-two, Fern's life doesn't look at all how she once imagined it would. Instead of living in the city, Fern's back home, running her mother's lakeside resort something she vowed never to do. The place is in disarray, her ex-boyfriend's the manager, and Fern doesn't know where to begin. She needs a plan a lifeline. To her surprise, it comes in the form of Will, who arrives nine years too late, with a suitcase in tow and an offer to help on his lips. Will may be the only person who understands what Fern’s going through. But how could she possibly trust this expensive-suit wearing mirage who seems nothing like the young man she met all those years ago. Will is hiding something, and Fern's not sure she wants to know what it is. But ten years ago, Will Baxter rescued Fern. Can she do the same for him?
+                                    </p> 
+                                </div>
+                        </fieldset>
+                    </div>
+                </section>
+            
+                <br>
+            
+                
+            </div>
+
+        </content> 
+            
+    </main>
+    <footer>
+        <nav class="fnavbar">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Copyright</a>
+            <a href="contact.html">Contact us</a>
+            <a href="#">About us</a>
+        </nav>
+    </footer>
+</body>
+</html>
